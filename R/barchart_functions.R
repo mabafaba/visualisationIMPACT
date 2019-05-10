@@ -112,7 +112,7 @@ barchart_impact <- function(.data, x , y,
      scale_fill_reach_categorical(n=nrow(dplyr::distinct(.data,!!subset.x)),name="")
 
    if (quo_is_null(infimum_error) | quo_is_null(supremum_error)) {
-     warning("Could not find the min or max column. None Error bars will be added to the barchart")
+     warning("Could not find the min or max column. No error bars will be added to the barchart")
    }
    else{
 

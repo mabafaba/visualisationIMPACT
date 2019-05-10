@@ -4,7 +4,7 @@
 \alias{sens_barchart}
 \title{Create a barchart for average}
 \usage{
-sens_barchart(.data, independent.var, max_nbr_var, size_max_label)
+orientation_barchart(.data, independent.var, max_nbr_var, size_max_label)
 }
 \arguments{
 \item{size_max_label}{integer for the maximum number of character of a label}

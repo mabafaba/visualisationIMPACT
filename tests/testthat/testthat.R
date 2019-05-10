@@ -4,7 +4,7 @@ library(visualisationIMPACT)
 
 
 
-
+######### old tests?
 
 test_that("colums that doesn't exist are found", {
   expect_error(add_parent_to_loop(loop_data1, parent_data1 , c("others")))

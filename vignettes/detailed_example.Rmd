@@ -59,7 +59,7 @@ result <- data %>% dplyr::select(c( independent.var , dependent.var)) %>% dplyr:
 ```{r}
 extrafont::loadfonts(device="win")  ##to compile before showing graph
 
-sens<- sens_barchart(result, region, 10, 20)
+sens<- orientation_barchart(result, region, 10, 20)
 
 barchart_impact(.data = result, x = region, y = average, infimum_error = min, supremum_error = max, sens.barchart = sens, percent = FALSE)
 
@@ -69,7 +69,6 @@ barchart_impact(.data = result, x = region, y = average, infimum_error = min, su
 ```{r}
 barchart_impact(.data = result, x = region, y = average, infimum_error = min, supremum_error = max, sens.barchart = sens, percent = TRUE)
 ```
-
 
 
 ## Barchart with percent >100%
